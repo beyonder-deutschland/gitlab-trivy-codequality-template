@@ -36,7 +36,7 @@ Include the templates in your `.gitlab-ci.yml`:
 
 ```yaml
 include:
-  - remote: 'https://github.com/ambient-innovation/gitlab-trivy-codequality-template/releases/download/v26.11.17.0/trivy-scanning.template.yaml'
+  - remote: 'https://github.com/beyonder-deutschland/gitlab-trivy-codequality-template/releases/download/v26.11.17.0/trivy-scanning.template.yaml'
 
 stages:
   - test
@@ -82,7 +82,7 @@ The template automatically downloads a `trivy.default.yaml` from the repository 
 #### With Custom Trivy Configuration (🎯 Recommended)
 ```yaml
 # 1. Download trivy.default.yaml (one-time):
-# curl -o trivy.yaml https://github.com/ambient-innovation/gitlab-trivy-codequality-template/releases/download/v26.11.17.0/trivy.default.yaml
+# curl -o trivy.yaml https://github.com/beyonder-deutschland/gitlab-trivy-codequality-template/releases/download/v26.11.17.0/trivy.default.yaml
 
 # 2. Customize trivy.yaml according to your needs
 
@@ -185,11 +185,11 @@ This project uses Calendar Versioning (CalVer) in the format `YY.MM.DD.MICRO`:
 ```yaml
 # ✅ Recommended: Use specific version
 include:
-  - remote: 'https://github.com/ambient-innovation/gitlab-trivy-codequality-template/releases/download/v26.11.17.0/trivy-scanning.template.yaml'
+  - remote: 'https://github.com/beyonder-deutschland/gitlab-trivy-codequality-template/releases/download/v26.11.17.0/trivy-scanning.template.yaml'
 
 # ⚠️ Caution: Latest may contain breaking changes
 include:
-  - remote: 'https://github.com/ambient-innovation/gitlab-trivy-codequality-template/releases/download/v26.11.17.0/trivy-scanning.template.yaml'
+  - remote: 'https://github.com/beyonder-deutschland/gitlab-trivy-codequality-template/releases/download/v26.11.17.0/trivy-scanning.template.yaml'
 ```
 
 ### Automatic Releases
@@ -205,7 +205,7 @@ Find the latest version under [Releases](../../releases/latest).
 Example for using the latest version:
 ```yaml
 include:
-  - remote: 'https://github.com/ambient-innovation/gitlab-trivy-codequality-template/releases/download/v26.11.17.0/trivy-scanning.template.yaml'
+  - remote: 'https://github.com/beyonder-deutschland/gitlab-trivy-codequality-template/releases/download/v26.11.17.0/trivy-scanning.template.yaml'
 ```
 
 ## 🛠️ Development
@@ -256,4 +256,4 @@ This project is licensed under the Apache License 2.0 - see [LICENSE](LICENSE) f
 
 - [Trivy Documentation](https://aquasecurity.github.io/trivy/)
 - [GitLab CI/CD Templates](https://docs.gitlab.com/ee/ci/yaml/includes.html)
-- [Trivy GitLab CodeQuality Plugin](https://github.com/ambient-innovation/trivy-plugin-gitlab-codequality)
+- [Trivy GitLab CodeQuality Plugin](https://github.com/beyonder-deutschland/trivy-plugin-gitlab-codequality)

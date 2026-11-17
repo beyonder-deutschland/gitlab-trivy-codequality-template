@@ -32,7 +32,7 @@ jobs:
           echo "🔍 Fetching latest Trivy plugin version from GitHub API..."
           
           # Get latest release version from GitHub API
-          LATEST_VERSION=$(curl -s https://api.github.com/repos/ambient-innovation/trivy-plugin-gitlab-codequality/releases/latest | jq -r '.tag_name')
+          LATEST_VERSION=$(curl -s https://api.github.com/repos/beyonder-deutschland/trivy-plugin-gitlab-codequality/releases/latest | jq -r '.tag_name')
           
           if [ "$LATEST_VERSION" = "null" ] || [ -z "$LATEST_VERSION" ]; then
             echo "❌ Failed to fetch latest Trivy plugin version"
